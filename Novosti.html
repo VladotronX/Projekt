@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 stranice s člancima.">
+    <meta name="keywords" content="HTML5, frontend, članci, thumbnail">
+    <meta name="author" content="Marko Vladetić">
+    <title>Novosti</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header, nav {
+            background-color: #333;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .article {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article-content h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .article-content p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .article-content .date {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .article-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+        }
+		
+		footer .github {
+            margin-top: 15px;
+        }
+
+        footer .github img {
+            width: 50px;
+            height: 30px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Novosti</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Početna stranica</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="o nama.html">O nama</a></li>
+            <li><a href="Galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Članci</h1>
+        <div class="articles">
+            <!-- Članak 1 -->
+            <article class="article">
+                <a href="clanak.html">
+                    <img src="thumbnail1.jpg" alt="Thumbnail članka 1">
+                </a>
+                <div class="article-content">
+                    <h3><a href="clanak.html">Brutalno su pretukli biciklista, a kriminalisti nikako da im uđu u trag. </a></h3>
+                    <p>Sada mole javnost: Ovaj čovjek mogao bi biti ključ!</p>
+                    <span class="date">Objavljeno: 15.01.2025.</span>
+                    <a href="clanak.html">Pročitajte više...</a>
+                </div>
+            </article>
+            <!-- Članak 2 -->
+            <article class="article">
+                <a href="#">
+                    <img src="thumbnail2.jpg" alt="Thumbnail članka 2">
+                </a>
+                <div class="article-content">
+                    <h3><a href="#">Zna se što je eksplodiralo u ruci dječaka, uhićeni su otac i baka! </a></h3>
+                    <p>Krenuo je upaliti peć, a onda našao pištolj...</p>
+                    <span class="date">Objavljeno: 14.01.2025.</span>
+                    <a href="#">Pročitajte više...</a>
+                </div>
+            </article>
+            <!-- Članak 3 -->
+            <article class="article">
+                <a href="#">
+                    <img src="thumbnail3.jpg" alt="Thumbnail članka 3">
+                </a>
+                <div class="article-content">
+                    <h3><a href="#">Ubojica iz Prečkog dobio tri godine zatvora jer je usmrtio svog dilera..</a></h3>
+                    <p>Zbog 15 eura mu je tukao teško bolesnu majku...</p>
+                    <span class="date">Objavljeno: 13.01.2025.</span>
+                    <a href="#">Pročitajte više...</a>
+                </div>
+            </article>
+            <!-- Članak 4 -->
+            <article class="article">
+                <a href="#">
+                    <img src="thumbnail4.jpg" alt="Thumbnail članka 4">
+                </a>
+                <div class="article-content">
+                    <h3><a href="#">Sukob izbio zbog cure!? Potukla se dva dječaka, a onda je jedan izvadio škare... </a></h3>
+                    <p>Čelnik kluba: Izbacit ćemo obojicu</p>
+                    <span class="date">Objavljeno: 12.01.2025.</span>
+                    <a href="#">Pročitajte više...</a>
+                </div>
+            </article>
+            <!-- Članak 5 -->
+            <article class="article">
+                <a href="#">
+                    <img src="thumbnail5.jpg" alt="Thumbnail članka 5">
+                </a>
+                <div class="article-content">
+                    <h3><a href="#">Prijatelj, kum, punica, bivša djevojka, svi su u šoku zbog ubojice s Trešnjevke</a></h3>
+                    <p>Ni na kraj pameti nam nije bilo da feštamo u blizini mrtve žene...</p>
+                    <span class="date">Objavljeno: 11.01.2025.</span>
+                    <a href="#">Pročitajte više...</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+	<p>&copy; 2025 Marko Vladetić</p>
+        <div class="github">
+            <a href="https://github.com/VladotronX/Projekt/tree/4e3c1c23660f5d8e19f5fd4d9787678cbf6ef098" target="_blank">
+                <img src="github-logo.png" alt="GitHub logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

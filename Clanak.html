@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 stranice s galerijom slika članka.">
+    <meta name="keywords" content="HTML5, frontend, galerija, slike, članci">
+    <meta name="author" content="Marko Vladetić">
+    <title>Članak</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header, nav {
+            background-color: #333;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .content p {
+            margin: 15px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery figure {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: #fff;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery figcaption {
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+        }
+
+        .back-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+		footer .github {
+            margin-top: 15px;
+        }
+
+        footer .github img {
+            width: 50px;
+            height: 30px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zaglavlje Stranice</h1>
+    </header>
+    <nav>
+        <ul>
+             <li><a href="home.html">Početna stranica</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="o nama.html">O nama</a></li>
+            <li><a href="Galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Crna kronika</h1>
+        <h2>Brutalno su pretukli biciklista, a kriminalisti nikako da im uđu u trag.</h2>
+        <p class="date">Objavljeno: 15.01.2025.</p>
+        <div class="content">
+            <p>Od 11. rujna zagrebački kriminalisti nastoje riješiti brutalno premlaćivanje u zagrebačkom Susedgradu točnije na makadamskom putu uz Ljubljansku aveniju kada je teško ozlijeđen muškarac.</p>
+            <p>Obzirom da dosadašnja potraga nije polučila rezultatima, PU zagrebačka se odlučila obratiti za pomoć pa su objavili fotografije "skinute" s videonadzora koji je snimio osobu za koju kriminalisti pretpostavljaju da raspolaže saznanjima o navedenom kaznenom djelu.</p>
+            <p>Radi se o muškarcu starosti oko 45 godina, visine oko 180 cm, srednje tjelesne građe, prosjede kose s vidljivim zaliscima, a tada je bio odjeven u bijelu majicu kratkih rukava s natpisom i svijetlo plave kratke hlače dok je na nogama imao šarene tenisice. Ukoliko građani imaju korisne informacije o osobi s fotografija pozivamo ih da nas o tome obavijeste pozivom na broj telefona II. policijske postaje Zagreb 01 4570 520 ili na broj 192. Također, korisne informacije građani mogu dostaviti na e-mail adresu II. policijske postaje Zagreb ii.pp.zagreb@mup.hr - kažu iz PU zagrebačke napominjući i da se korisne informacije o muškarcu sa fotografija mogu dostaviti i anonimno.</p>
+            <p>A riječ je o događaju koji je objavila policija lanjskog rujna kada su naveli i da su nepoznati počinitelji 200-tinjak metara istočno od križanja sa Škorpikovom, napali 63-godišnjaka koji je vozio bicikl u pravcu Ljubljanske avenije. </p>
+            <p>Bilo je to navedenog datuma oko 19.40 sati nakon čega je ozlijeđeni biciklist završio s teškim ozljedama u KBC Sestre milosrdnice dok policija otada traga za počiniteljem odnosno više njih.</p>
+        </div>
+        <h2>Galerija Slika</h2>
+        <div class="gallery">
+            <figure>
+                <img src="slika1.jpg" alt="Izgled osumnjičenog 1">
+                <figcaption>Izgled osumnjičenog 1</figcaption>
+            </figure>
+            <figure>
+                <img src="slika2.jpg" alt="Opis slike 2">
+                <figcaption>Izgled osumnjičenog 2</figcaption>
+            </figure>
+            <figure>
+                <img src="slika3.jpg" alt="Opis slike 3">
+                <figcaption>Izgled osumnjičenog 3</figcaption>
+            </figure>
+            <figure>
+                <img src="slika4.jpg" alt="Opis slike 4">
+                <figcaption>Izgled osumnjičenog 4</figcaption>
+            </figure>
+            <figure>
+                <img src="slika5.jpg" alt="Opis slike 5">
+                <figcaption>Izgled osumnjičenog 5</figcaption>
+            </figure>
+        </div>
+        
+    </main>
+    <footer>
+	<p>&copy; 2025 Marko Vladetić</p>
+        <div class="github">
+            <a href="https://github.com/VladotronX/Projekt/tree/4e3c1c23660f5d8e19f5fd4d9787678cbf6ef098" target="_blank">
+                <img src="github-logo.png" alt="GitHub logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

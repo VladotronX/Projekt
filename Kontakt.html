@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt stranica s formom i vezom na Google kartu.">
+    <meta name="keywords" content="HTML5, kontakt, forma, Google karta">
+    <meta name="author" content="Marko Vladetić">
+    <title>Kontakt Stranica - HTML5</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header, nav {
+            background-color: #333;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .map {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        .contact-form {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+        }
+		footer .github {
+            margin-top: 15px;
+        }
+
+        footer .github img {
+            width: 50px;
+            height: 30px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontaktirajte nas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Početna stranica</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="o nama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+       
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.929005227417!2d16.076679123151198!3d45.71246107216439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667f5827e4540f%3A0x3e39df9dc647cfe7!2s%22KOD%20KUGLE%22!5e0!3m2!1shr!2shr!4v1737151007028!5m2!1shr!2shr" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <form class="contact-form" action="#" method="post">
+            <label for="ime">Ime*</label>
+            <input type="text" id="ime" name="ime" required>
+            
+            <label for="prezime">Prezime*</label>
+            <input type="text" id="prezime" name="prezime" required>
+            
+            <label for="email">E-mail adresa*</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="drzava">Država</label>
+            <select id="drzava" name="drzava">
+                <option value="hr">Hrvatska</option>
+                <option value="si">Slovenija</option>
+                <option value="ba">Bosna i Hercegovina</option>
+                <option value="rs">Srbija</option>
+                <option value="me">Crna Gora</option>
+            </select>
+            
+            <label for="opis">Opis</label>
+            <textarea id="opis" name="opis" rows="5"></textarea>
+            
+            <button type="submit">Pošalji</button>
+        </form>
+    </main>
+    <footer>
+	<p>&copy; 2025 Marko Vladetić</p>
+        <div class="github">
+            <a href="https://github.com/VladotronX/Projekt/tree/4e3c1c23660f5d8e19f5fd4d9787678cbf6ef098" target="_blank">
+                <img src="github-logo.png" alt="GitHub logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
