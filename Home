@@ -6,7 +6,7 @@
     <meta name="description" content="Primjer HTML5 strukture sa zaglavljem i navigacijom.">
     <meta name="keywords" content="HTML5, frontend, zaglavlje, banner, navigacija">
     <meta name="author" content="Marko Vladetić">
-    <title>Zaglavlje Frontend Sučelja</title>
+    <title>Star TV</title>
     <style>
         /* Reset osnovnih margina */
         body {
