@@ -120,7 +120,10 @@
 </head>
 <body>
     <header>
-	
+	<!-- Banner -->
+        <div class="banner">
+            <img src="banner.png" alt="Banner stranice" />
+        </div>
 	<!-- Navigacija -->
         <nav>
             <ul>
@@ -131,10 +134,7 @@
             <li><a href="Galerija.html">Galerija</a></li>
             </ul>
         </nav>
-        <!-- Banner -->
-        <div class="banner">
-            <img src="banner.png" alt="Banner stranice" />
-        </div>
+        
 	</header>
 	 <main>
         <h1>Dobrodošli na našu stranicu!</h1>
